@@ -18,9 +18,13 @@ Use it for **simulation, research, or prototyping** swarm systems.
 ## 🧩 Features
 
 ✨ Bi‑directional communication over TCP/IP
+
 📊 Logging & telemetry storage
+
 🖥 Web dashboard with Flask templates
+
 📡 Scalable to many drones
+
 🔧 Modular & easy to extend
 
 ---
