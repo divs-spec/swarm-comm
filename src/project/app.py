@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, send_file, session, redirect ,escape
+from flask import Flask, render_template, request
 import os
 import mysql.connector
 
@@ -30,8 +30,7 @@ def datareceiver():
 			val=(lat,lon,tar)
 
 			mycursor.execute(query,val)
-			mycursor.commit()
-			mydb.commmit()
+			mydb.commit()
 			print("Data successfully send to Laptop. ",mycursor.rowcount, " record inserted")
 
 			mycursor.close()
