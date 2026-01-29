@@ -69,7 +69,7 @@ python client.py
 
 ## 🙌 Contributing
 
-Pull requests, issues, and feedback welcome! Follow PEP8 and open issues for big changes.
+Pull requests, issues, and feedback welcome!
 
 ---
 
