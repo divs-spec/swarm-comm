@@ -23,7 +23,7 @@ def datareceiver():
 
 			print("Target detected is non-zero. ")
 
-			mydb=mysql.connector.connect(host="localhost", user="mohit", password="passwd", database="DroneData")
+			mydb=mysql.connector.connect(host="localhost", user="d", password="passwd", database="DroneData")
 			mycursor=mydb.cursor()
 
 			query="INSERT INTO data VALUES(%f,%f,%d)"
@@ -58,7 +58,7 @@ def datareceiver():
 #Displaying the data received from mysql
 @app.route('/dronedata',methods=['GET','POST'])
 def showdata():
-	mydb=mysql.connector.connect(host="localhost", user="mohit", password="passwd", database="DroneData")
+	mydb=mysql.connector.connect(host="localhost", user="d", password="passwd", database="DroneData")
 	mycursor=mydb.cursor()
 
 	mycursor.execute("SELECT*FROM data")
